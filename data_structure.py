@@ -33,14 +33,34 @@
 
 # dictionary
 
-account = {
-    "account_name": "ngozi okafor",
-    "account_number": "0123456789",
-    "balance": 45000,
-    "is_active": True 
-}
+# account = {
+#     "account_name": "ngozi okafor",
+#     "account_number": "0123456789",
+#     "balance": 45000,
+#     "is_active": True 
+# }
 
-transfer_amount = 5000.00
-if account["is_active"] and account["balance"] >= transfer_amount:
-    account["balance"] -= transfer_amount
-    print(f"Transfer successful! new balance: ${account["balance"]}")
+# transfer_amount = 5000.00
+# if account["is_active"] and account["balance"] >= transfer_amount:
+#     account["balance"] -= transfer_amount
+#     print(f"Transfer successful! new balance: ${account["balance"]}")
+
+
+basket = []
+basket.append("plantains")
+basket.append("garri")
+basket.append("palm oil")
+basket.append("afang leaves")
+
+print("current basket:", basket)
+
+basket.sort()
+print("sorted basket:", basket)
+
+scanned_first = basket.pop(0)
+print(f"cashier scanned: {scanned_first}")
+
+scanned_last = basket.pop()
+print(f"cashier scanned: {scanned_last}")
+
+print("remaining items to scan:", basket)
